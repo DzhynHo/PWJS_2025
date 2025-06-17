@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PWJS_2025/Projekt/static/css/main.3c6fff68.css",
+    "main.js": "/PWJS_2025/Projekt/static/js/main.eb2db084.js",
+    "static/js/453.ed3810f9.chunk.js": "/PWJS_2025/Projekt/static/js/453.ed3810f9.chunk.js",
+    "static/media/beer money.ttf": "/PWJS_2025/Projekt/static/media/beer money.9140c11a6ce52eba2d19.ttf",
+    "static/media/fish-walk-1.png": "/PWJS_2025/Projekt/static/media/fish-walk-1.d6871bb0efb0b6526239.png",
+    "static/media/fish-extra-3.png": "/PWJS_2025/Projekt/static/media/fish-extra-3.a56f2464b9e37bede392.png",
+    "static/media/fish-extra-2.png": "/PWJS_2025/Projekt/static/media/fish-extra-2.3743fef0aee04b692049.png",
+    "static/media/fish-walk-2.png": "/PWJS_2025/Projekt/static/media/fish-walk-2.ec6baaf531b8ad62505e.png",
+    "static/media/fish-extra-1.png": "/PWJS_2025/Projekt/static/media/fish-extra-1.edf74459fcb9b59c9097.png",
+    "static/media/fish-standing.png": "/PWJS_2025/Projekt/static/media/fish-standing.68af60163f58d48a0c49.png",
+    "static/media/slick.svg": "/PWJS_2025/Projekt/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/PWJS_2025/Projekt/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/PWJS_2025/Projekt/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/PWJS_2025/Projekt/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/PWJS_2025/Projekt/index.html",
+    "main.3c6fff68.css.map": "/PWJS_2025/Projekt/static/css/main.3c6fff68.css.map",
+    "main.eb2db084.js.map": "/PWJS_2025/Projekt/static/js/main.eb2db084.js.map",
+    "453.ed3810f9.chunk.js.map": "/PWJS_2025/Projekt/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c6fff68.css",
+    "static/js/main.eb2db084.js"
+  ]
+}
