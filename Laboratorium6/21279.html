@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Minecraft</title>
+  <link rel="stylesheet" href="css/21279.css">
+  <script>
+    let score = 0;
+    let q = 0;
+
+    const questions = [
+      ['Jakiego narzędzia używasz, żeby kopać diamenty?', 'Kilof'],
+      ['Jakiego potwora spotkasz w nocy na powierzchni?', 'Zombie'],
+      ['Z czego robi się chleb w Minecraft?', 'Pszenica'],
+      ['Który surowiec musisz stopić w piecu, żeby uzyskać żelazo?', 'Żelazną rudę'],
+      ['Jak nazywa się portal, który prowadzi do Krainy Kresu (End)?', 'Portal do Endu'],
+      ['Jakie zwierzę można oswoić, żeby mieć kota?', 'Ocelot'],
+      ['Co się stanie, gdy spojrzysz Endermanowi w oczy?', 'Zaatakuje']
+    ];
+
+    function loadQuestion() {
+      if (q < questions.length) {
+        document.getElementById('question').innerText = questions[q][0];
+        document.getElementById('answer').value = '';
+        document.getElementById('feedback').innerText = '';
+      } else {
+        showResult();
+      }
+    }
+
+    function checkAnswer() {
+      const userAnswer = document.getElementById('answer').value.trim();
+      if (userAnswer.toLowerCase() === questions[q][1].toLowerCase()) {
+        score++;
+        document.getElementById('feedback').innerText = 'Dobra odpowiedź!';
+        document.getElementById('feedback').style.color = 'green';
+      } else {
+        document.getElementById('feedback').innerText = 'Zła odpowiedź. Poprawna to: ' + questions[q][1];
+        document.getElementById('feedback').style.color = 'red';
+      }
+      document.getElementById('checkBtn').disabled = true;
+      document.getElementById('nextBtn').style.display = 'inline-block';
+    }
+
+    function nextQuestion() {
+      q++;
+      document.getElementById('checkBtn').disabled = false;
+      document.getElementById('nextBtn').style.display = 'none';
+      loadQuestion();
+    }
+
+    function showResult() {
+      document.getElementById('quiz').style.display = 'none';
+      document.getElementById('result').innerHTML = 'Koniec quizu! <br> Zdobyłeś ' + score + ' z ' + questions.length + ' punktów.';
+    }
+
+    window.onload = loadQuestion;
+  </script>
+</head>
+
+<body>
+  <h1>Quiz o Minecraft!</h1>
+  
+  <div id="quiz">
+    <img id="question-image" src="img/1.jpg" alt="obrazek Minecraft" style="max-width: 200px; margin-bottom: 20px;">
+    <p id="question"></p>
+    <input type="text" id="answer" placeholder="Wpisz odpowiedź tutaj">
+    <br><br>
+    <button id="checkBtn" onclick="checkAnswer()">Sprawdź</button>
+    <button id="nextBtn" onclick="nextQuestion()">Następne pytanie</button>
+    <p id="feedback"></p>
+  </div>
+
+  <div id="result"></div>
+
+</body>
+</html>
