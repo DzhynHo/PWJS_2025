@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PWJS_2025/Laboratorium8/static/css/main.a374b5d0.css",
+    "main.js": "/PWJS_2025/Laboratorium8/static/js/main.371b96d2.js",
+    "static/js/453.ed3810f9.chunk.js": "/PWJS_2025/Laboratorium8/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/PWJS_2025/Laboratorium8/index.html",
+    "main.a374b5d0.css.map": "/PWJS_2025/Laboratorium8/static/css/main.a374b5d0.css.map",
+    "main.371b96d2.js.map": "/PWJS_2025/Laboratorium8/static/js/main.371b96d2.js.map",
+    "453.ed3810f9.chunk.js.map": "/PWJS_2025/Laboratorium8/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a374b5d0.css",
+    "static/js/main.371b96d2.js"
+  ]
+}
