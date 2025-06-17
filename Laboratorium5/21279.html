@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/21279.css">
+  <title>Projekt – JavaScript</title>
+</head>
+<body>
+
+  <h1>Projekt – JavaScript i Tablice</h1>
+
+  <!-- ZADANIE 1 i 2 -->
+  <section id="tablice">
+    <h2>Zadanie 1 i 2 – Manipulacja tablicami</h2>
+
+    <p>Drugi element tablicy 1: <span id="second"></span></p>
+    <p>Zmodyfikowany ostatni element tablicy 1: <span id="lastModified"></span></p>
+    <p>Tablica 1 po operacjach: <span id="finalArray"></span></p>
+    <p>Usunięty pierwszy element: <span id="removedFirst"></span></p>
+    <p>Usunięty ostatni element: <span id="removedLast"></span></p>
+
+    <script>
+      const tablice = [
+        { 
+          name: 'Tablica 1', 
+          elements: ['jabłko', 'banan', 'gruszka', 'winogrono', 'pomarańcza']
+        },
+        { 
+          name: 'Tablica 2', 
+          elements: ['poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek']
+        }
+      ];
+
+      // Zadanie 1: Drugi element tablicy 1
+      document.getElementById('second').textContent = tablice[0].elements[1];
+
+      // Zmodyfikowany ostatni element tablicy 1
+      tablice[0].elements[tablice[0].elements.length - 1] = 'kiwi';
+      document.getElementById('lastModified').textContent = tablice[0].elements[tablice[0].elements.length - 1];
+
+      // Dodanie nowych elementów do tablicy 1
+      tablice[0].elements[5] = 'agrest';
+      tablice[0].elements[tablice[0].elements.length] = 'awokado';
+      tablice[0].elements.push('arbuz', 'bez', 'granat', 'guawa');
+      tablice[0].elements.unshift('kaki', 'mango');
+
+      // Usunięcie pierwszego i ostatniego elementu
+      const removedLast = tablice[0].elements.pop();
+      const removedFirst = tablice[0].elements.shift();
+
+      // Wyświetlanie wyników
+      document.getElementById('finalArray').textContent = tablice[0].elements.join(', ');
+      document.getElementById('removedFirst').textContent = removedFirst;
+      document.getElementById('removedLast').textContent = removedLast;
+    </script>
+
+    <script>
+      // Zadanie 2: Manipulacja tablicą "nowaTablica"
+      const nowaTablica = tablice[1].elements;
+
+      document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+      document.write('<p>Ostatni element to <strong>' + nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+      nowaTablica.unshift('niedziela');
+      document.write('<p>Po dodaniu nowego elementu pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+    </script>
+  </section>
+
+  <!-- ZADANIE 3 -->
+  <section id="liczenie">
+    <h2>Zadanie 3 – Liczenie elementów</h2>
+    <p id="info"></p>
+
+    <script>
+      const liczbaParagrafow = document.getElementsByTagName("p").length;
+      document.getElementById("info").innerHTML =
+        "Na stronie znajduje się " + liczbaParagrafow + " elementów &lt;p&gt; (paragrafów) – są to opisy danych w sekcji tablic.";
+    </script>
+  </section>
+
+  <!-- ZADANIE 4 -->
+  <section id="main-page">
+    <h2>Zadanie 4 – Wstawianie danych przez DOM</h2>
+    <p id="dane1"></p>
+    <p id="dane2"></p>
+    <div id="polowaWhile"></div>
+    <div id="polowaFor"></div>
+    <button onclick="pokazDane()">Pokaż moje dane</button>
+
+    <script>
+      document.getElementById("dane1").innerHTML = "Element z Tablica 1: " + tablice[0].elements[2];
+      document.getElementById("dane2").innerHTML = "Element z Tablica 2: " + nowaTablica[3];
+
+      // while – połowa tablicy
+      let i = 0;
+      const polowa = Math.floor(tablice[0].elements.length / 2);
+      let wynikWhile = "<p>Połowa Tablica 1 (while): ";
+      while (i < polowa) {
+        wynikWhile += tablice[0].elements[i] + " ";
+        i++;
+      }
+      wynikWhile += "</p>";
+      document.getElementById("polowaWhile").innerHTML = wynikWhile;
+
+      // for – połowa tablicy
+      let wynikFor = "<p>Połowa Tablica 1 (for): ";
+      for (let j = 0; j < polowa; j++) {
+        wynikFor += tablice[0].elements[j] + " ";
+      }
+      wynikFor += "</p>";
+      document.getElementById("polowaFor").innerHTML = wynikFor;
+
+      // Funkcja na przycisk
+      function pokazDane() {
+        const dane1 = document.getElementById("dane1").innerHTML;
+        const dane2 = document.getElementById("dane2").innerHTML;
+        alert("Dane pobrane z DOM:\n" + dane1 + "\n" + dane2);
+      }
+    </script>
+  </section>
+
+  <!-- ZADANIE 5 -->
+  <section id="quiz">
+    <h2>Zadanie 5 – Quiz</h2>
+    <div id="quiz-content"></div>
+
+    <script>
+      const questions = [
+        ['17 + 13 = ?', 30],
+        ['√121 = ?', 11],
+        ['13 * 11 = ?', 143]
+      ];
+
+      let score = 0;
+      let output = "";
+      for (let i = 0; i < questions.length; i++) {
+        const answer = prompt(questions[i][0]);
+        if (parseInt(answer) === questions[i][1]) {
+          alert('Prawidłowa odpowiedź!');
+          score++;
+        } else {
+          alert('Błąd. Prawidłowa odpowiedź to ' + questions[i][1]);
+        }
+      }
+      output = "<p>Uzyskałeś " + score + " punktów z " + questions.length + " możliwych.</p>";
+      document.getElementById("quiz-content").innerHTML = output;
+    </script>
+  </section>
+
+</body>
+</html>
