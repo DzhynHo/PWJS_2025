@@ -1,0 +1,128 @@
+  @font-face {
+  font-family: 'Beer Money';
+  src: url('../src/fonts/beer\ money.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+.fullscreen-wrapper {
+  display: flex;
+  flex-direction: column; /* вертикально */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    #25351b 0%,
+    #000000 60%
+  );
+  overflow: hidden;
+  position: relative;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+  .fullscreen-wrapper.fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+.intro-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: visible;
+  /* анімація руху зліва направо */
+  animation: moveRight 3s linear forwards;
+  margin-bottom: 20px; /* відступ від тексту знизу */
+}
+
+  @keyframes moveRight {
+    from {
+      transform: translateX(-220px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .fish {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.5));
+    pointer-events: none;
+  }
+
+  .fish img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .fish img.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+.intro-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out forwards;
+  margin-top: 0; /* прибрав margin, бо відступ створює intro-container */
+  text-align: center; /* для центрування тексту */
+}
+
+.site-title {
+  font-family: 'Beer Money', sans-serif;
+  font-size: 150px;
+  color: #BDC97F;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.enter-button {
+   font-family: 'Beer Money', sans-serif;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #BDC97F;
+  color: #000000;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-transform: uppercase;
+}
+
+.enter-button:hover {
+  background-color: #e0ffe0;
+}
+
+  .intro-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

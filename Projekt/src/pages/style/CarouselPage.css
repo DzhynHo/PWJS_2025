@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #d4fdd4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease-in-out; /* <-- оце плавність */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(15px); /* Розмиття */
+  background-color: rgba(0, 0, 0, 0.6); /* Затемнення */
+  z-index: 1;
+}
+
+.slider-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: rgba(20, 20, 20, 0.4); /* Optional: напівпрозорий блок для кращого контрасту */
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.song-slide img {
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  margin: 0 auto 10px;
+}
+
+.song-slide h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #e0ffe0;
+}
+
+.song-slide p {
+  font-size: 1rem;
+  color: #b7e4b7;
+}
+
+.tinder-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.tinder-button {
+  font-size: 20px;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.tinder-button.like {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tinder-button.dislike {
+  background-color: #000000;
+  color: #fff;
+}
+
+.tinder-button:hover {
+  transform: scale(1.1);
+}

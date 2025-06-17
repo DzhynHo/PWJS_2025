@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Beer Money';
+  src: url('../../fonts/beer money.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.stats-container {
+  padding: 2rem 3rem;
+  background-color: #111;
+  color: #d4fdd4;
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Beer Money', sans-serif;
+  text-align: left;
+  font-size: 1.3rem; /* Збільшений базовий розмір шрифту */
+}
+
+.top-song .song-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(20, 20, 20, 0.7);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+}
+
+.song-img {
+  width: 120px;    /* Збільшено з 80 */
+  height: 120px;   /* Збільшено з 80 */
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.song-info h4 {
+  margin: 0 0 0.8rem 0;
+  font-family: 'Beer Money', sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem; /* Збільшено */
+}
+
+.top-list ol {
+  padding-left: 1.5rem;
+  font-size: 1.2rem; /* Збільшено */
+  font-family: 'Beer Money', sans-serif;
+  line-height: 1.6;
+}

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Beer Money';
+  src: url('../../fonts/beer money.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.settings-container {
+  padding: 2rem 3rem;
+  background-color: #111;
+  color: #d4fdd4;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Beer Money', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.settings-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.language-switcher button {
+  background-color: #222;
+  border: 2px solid #d7e592;
+  color: #d4fdd4;
+  padding: 0.7rem 1.5rem;
+  font-family: 'Beer Money', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-switcher button:disabled {
+  background-color: #BDC97F;
+  color: #111;
+  cursor: default;
+}
+
+.language-switcher button:hover:not(:disabled) {
+  background-color: #BDC97F;
+  color: #111;
+}

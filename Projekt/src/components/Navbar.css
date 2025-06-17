@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Beer Money';
+  src: url('../fonts/beer\ money.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  font-family: 'Beer Money', sans-serif;
+  background: linear-gradient(135deg, #000000, #111111);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #f1ffab;
+  text-decoration: none;
+  position: relative;
+  padding: 0.25rem 0;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 5px #314624,
+    0 0 10px #314624,
+    0 0 15px #314624,
+    0 0 20px #314624;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #d7ff12;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 6px #d7ff12;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  text-shadow:
+    0 0 6px #ffffff,
+    0 0 12px #d7ff12,
+    0 0 20px #d7ff12;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

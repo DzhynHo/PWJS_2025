@@ -1,0 +1,68 @@
+.favorite-container {
+  font-family: 'Beer Money', sans-serif;
+  text-align: left; /* Текст і все зліва */
+  padding: 1rem;
+  color: #d4fdd4;
+  background-color: #111;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start; /* Елементи списку прилипають зліва */
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  background-color: rgba(20, 20, 20, 0.6);
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 255, 150, 0.2);
+  transition: background-color 0.3s;
+
+  justify-content: flex-start; /* Контент всередині ліворуч */
+  width: fit-content; /* Ширина під контент */
+  max-width: 100%;
+}
+
+.favorite-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.favorite-info {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.favorite-title-song {
+  margin: 0 0 2px 0;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-artist {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #a3d9a5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-audio {
+  width: 150px;
+}
