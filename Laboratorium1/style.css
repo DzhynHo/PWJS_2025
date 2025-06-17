@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Myfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000; /* Bolgarska Róża */
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    width: 1078px;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #000000; /* Czarny obramowanie */
+}
+
+header {
+    background-color: #900020; /* Burgundski */
+    color: #ffffff;
+    height: 100px;
+    position: relative;
+    border: 1px solid #000000; /* Czarny obramowanie */
+}
+
+#logo {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+#logo img {
+    max-height: 80px;
+}
+
+nav {
+    background-color: #9B2D30; /* Bordowy */
+    color: #ffffff;
+    height: 50px;
+    text-align: left;
+    border: 1px solid #000000; /* Czarny obramowanie */
+    font-size: xx-large;
+}
+
+main {
+    background-color: #5E2129; /* Winno-czerwony */
+    height: auto;
+    overflow: auto;
+    text-align: left;
+    border: 1px solid #000000; /* Czarny obramowanie */
+    font-size: xx-large;
+}
+
+#col-left {
+    background-color: #7B001C; /* Głęboki czerwony */
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid #000000; /* Czarny obramowanie */
+}
+
+#col-center {
+    background-color: #480607; /* Bolgarska Róża */
+    height: auto;
+    border: 1px solid #000000; /* Czarny obramowanie */
+}
+
+footer {
+    background-color: #9B2D30; /* Bordowy */
+    color: #ffffff;
+    height: 50px;
+    clear: both;
+    border: 1px solid #000000; /* Czarny obramowanie */
+    font-size: xx-large;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #9B2D30; /* Bordowy */
+    color: #ffffff;
+    font-size: x-large;
+}
+
+tr:nth-child(even) {
+    background-color: #480607; /* Светлый фон для четных строк */
+    font-size: x-large;
+}
+
+tr:nth-child(odd) {
+    background-color: #480607; /* Темный фон для нечетных строк */
+    font-size: x-large;
+}
+
+td[rowspan] {
+    background-color: #480607; /* Фон для ячеек с rowspan */
+    font-size: x-large;
+}
+
+td[colspan] {
+    background-color: #480607   ; /* Фон для ячеек с colspan */
+    font-size: x-large;
+}
