@@ -6,7 +6,7 @@ To repozytorium zawiera wszystkie zadania z laboratoriów oraz projekt końcowy 
 
 Wszystkie laboratoria i projekt są dostępne na stronie GitHub Pages:
 
-👉 [Zobacz stronę główną](https://dzhynho.github.io/PWJS_2025/docs/index.html)
+👉 [**Zobacz stronę z wszystkimi labami i projektem**](https://dzhynho.github.io/PWJS_2025/)
 
 ## 📁 Struktura repozytorium
 
