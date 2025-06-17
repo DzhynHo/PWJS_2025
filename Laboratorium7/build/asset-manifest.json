@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/css/main.d8141e09.css",
+    "main.js": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/js/main.25888fc9.js",
+    "static/js/453.ed3810f9.chunk.js": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/index.html",
+    "main.d8141e09.css.map": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/css/main.d8141e09.css.map",
+    "main.25888fc9.js.map": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/js/main.25888fc9.js.map",
+    "453.ed3810f9.chunk.js.map": "/ProgramowanieWJezykachSkryptowych/Laboratorium7prod/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8141e09.css",
+    "static/js/main.25888fc9.js"
+  ]
+}
