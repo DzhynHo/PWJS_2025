@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Formularz test</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/21279.css">
+
+  <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body>
+  <div class="container mt-4 text-left">
+    <img src="img/logo.jpg" alt="logo" id="logo" class="mt-4">
+    
+    <form onsubmit="return checkForm();">
+      <div class="form-group mb-3">
+        <p id="errorName" class="alert alert-danger d-none">Podanie imienia i nazwiska jest wymagane!</p>
+        <label for="contactName">Imię i nazwisko</label>
+        <input type="text" class="form-control" id="contactName">
+      </div>
+
+      <div class="form-group mb-3">
+        <p id="errorEmail" class="alert alert-danger d-none">Podanie poprawnego adresu email jest wymagane!</p>
+        <label for="contactEmail">Email</label>
+        <input type="email" class="form-control" id="contactEmail">
+      </div>
+
+      <div class="form-group mb-3">
+        <p id="errorInfo" class="alert alert-danger d-none">Wprowadź informację (maks. 250 znaków).</p>
+        <label for="contactInfo">Informacja</label>
+        <textarea class="form-control" id="contactInfo" maxlength="250"></textarea>
+      </div>
+
+      <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Wyślij</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/21279.js"></script>
+</body>
+</html>
