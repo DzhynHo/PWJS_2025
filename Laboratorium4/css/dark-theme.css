@@ -1,0 +1,29 @@
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-control {
+    background-color: #262626;
+    color: #ffffff;
+    border: 1px solid #444;
+  }
+  
+  .btn-primary {
+    background-color: #333333;
+    border-color: #444444;
+    color: #ffffff;
+  }
+  
+  .alert-danger {
+    background-color: #8b0000;
+    color: #ffffff;
+    border: none;
+  }
