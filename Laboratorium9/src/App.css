@@ -1,0 +1,82 @@
+/* Podstawowe tło i font */
+body {
+  background: linear-gradient(135deg, #ff9ac1, #ff4d94);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Kontener główny */
+div {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 182, 193, 0.85); /* jasnoróżowe półprzezroczyste tło */
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ff4d94;
+  padding: 25px;
+}
+
+/* Nagłówki */
+h1, h2 {
+  font-family: 'Brush Script MT', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 5px #ff66b2;
+  margin-bottom: 25px;
+}
+
+/* Przycisk w stylu Barbie */
+button {
+  background: linear-gradient(45deg, #ff66b2, #ff3385);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0 5px 10px #ff1a75;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff3399, #e60073);
+  box-shadow: 0 8px 15px #ff0066;
+  transform: translateY(-3px);
+}
+
+/* Lista produktów */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+li {
+  background: #ffb6c1;
+  border-radius: 15px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px #ff66b2;
+  font-size: 18px;
+}
+
+/* Przycisk "Usuń" w liście */
+li button {
+  background: #ff1a75;
+  padding: 6px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px #b3004d;
+}
+
+li button:hover {
+  background: #e60066;
+  box-shadow: 0 3px 8px #99004d;
+  transform: translateY(-2px);
+}
