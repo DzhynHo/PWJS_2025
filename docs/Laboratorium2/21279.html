@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona z nawigacją i pokazem slajdów</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Galeria</a>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item active"><a class="nav-link" href="#">Strona główna</a></li>
+      <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+      <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+ 
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="img/1.jpg" class="d-block w-100" alt="Obrazek 1"></div>
+      <div class="carousel-item"><img src="img/2.jpg" class="d-block w-100" alt="Obrazek 2"></div>
+      <div class="carousel-item"><img src="img/3.jpg" class="d-block w-100" alt="Obrazek 3"></div>
+      <div class="carousel-item"><img src="img/4.jpg" class="d-block w-100" alt="Obrazek 4"></div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+
+  <section class="jumbotron">
+    <h1>Klasycyzm i romantyzm (początek XIX wieku)</h1>
+    <p>Na początku XIX wieku sztuka była mocno związana z klasycyzmem, który kontynuował ideały sztuki starożytnej Grecji i Rzymu. Jednak z biegiem czasu pojawił się romantyzm – kierunek artystyczny, który kładł duży nacisk na emocje, wyobraźnię i indywidualność. Artyści romantyczni, tacy jak Eugène Delacroix czy J.M.W. Turner, starali się oddać piękno natury, dramatyzm i subiektywność ludzkich przeżyć.</p>
+    <p>Eugène Delacroix – Jeden z najwybitniejszych przedstawicieli romantyzmu, który używał intensywnych kolorów, aby wyrazić emocje i dramatyczne sceny. Jego obraz „Wolność wiodąca lud na barykady” stał się symbolem rewolucji i walki o wolność.</p>
+    <p>J.M.W. Turner – Brytyjski malarz, który był mistrzem pejzaży. Jego obrazy pełne były światła, dramatyzmu i ruchu, takie jak „Ostatnia walka Temeraire”.</p>
+  </section>
+
+
+  <section id="galeria" class="container text-center">
+    <h2 class="custom-header">Galeria wybitnych artystów</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="img/01.jpg" class="rounded-img" alt="Artysta 1">
+        <h3 class="text-primary">Eugène Delacroix</h3>
+      </div>
+      <div class="col-md-4">
+        <img src="img/02.jpg" class="rounded-img" alt="Artysta 2">
+        <h3 class="text-primary">J.M.W. Turner</h3>
+      </div>
+      <div class="col-md-4">
+        <img src="img/03.jpg" class="rounded-img" alt="Artysta 3">
+        <h3 class="text-primary">Francisco Goya</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Żart</button>
+  </footer>
+
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h1>Żart</h1>
+          <p>Studenci piją wino na korytarzu, wtem nadchodzi prof. ksiądz...</p>
+          <p>- Co pijecie?!?</p>
+          <p>- Wodę proszę księdza...</p>
+          <p>- Wodę? Pokażcie... Przecież to wino!!!</p>
+          <p>- Cud! Cud! Ksiądz zamienił wodę w wino!!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
